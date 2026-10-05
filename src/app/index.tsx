@@ -3,14 +3,18 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Index() {
   const message: string = "Hej Github";
   return (
-    <View style={styles.container}>
+    <View style={s.container}>
       <Text>Edit src/app/index.tsx to edit this screen.</Text>
-      <Text>{message}</Text>
+      <Text style={s.title}>{message}</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
+  title: {
+    fontSize: 32,
+    fontWeight: 900,
+  },
   container: {
     flex: 1,
     alignItems: "center",
